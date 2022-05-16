@@ -1,4 +1,4 @@
-package com.example.nutritionanalysis
+package example.nutritionanalysis
 
 import org.junit.Test
 

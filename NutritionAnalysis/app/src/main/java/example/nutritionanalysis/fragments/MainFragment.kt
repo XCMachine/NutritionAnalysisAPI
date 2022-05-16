@@ -36,7 +36,7 @@ class MainFragment : Fragment() {
 
         nutritionViewModel.nutritionDetails.observe(viewLifecycleOwner) {
             binding.caloriesChangeData.text = it.calories.toString()
-            binding.totalWeightTv.text = it.totalWeight.toString()
+            binding.totalWeightChangeData.text = it.totalWeight.toString()
         }
         nutritionViewModel.getNutritionDetails()
     }

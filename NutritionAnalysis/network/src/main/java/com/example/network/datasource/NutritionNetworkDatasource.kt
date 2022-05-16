@@ -30,11 +30,11 @@ class NutritionNetworkDatasource(
         })
     }
 
+    interface DataReadyCallback {
+        fun onDataReady(data: NutritionData)
+    }
+
     companion object {
         private const val LOG = "NutritionData"
     }
-}
-
-interface DataReadyCallback {
-    fun onDataReady(data: NutritionData)
 }

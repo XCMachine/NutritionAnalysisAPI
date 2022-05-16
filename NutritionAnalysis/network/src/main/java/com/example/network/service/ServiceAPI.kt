@@ -1,13 +1,13 @@
-package network.api
+package com.example.network.service
 
-import network.resources.models.NutritionData
+import com.example.network.models.NutritionData
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ServiceAPI {
     @GET("api/nutrition-data")
-    fun getNutritionDataSource(
+    fun getNutrition(
         @Query("app_id") app_id: String = "c515cd0d",
         @Query("app_key") app_key: String = KEY,
         @Query("nutrition-type") nutrition_type: String = "cooking",

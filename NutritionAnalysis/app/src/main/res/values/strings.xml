@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NutritionAnalysis</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calories_test">CaloriesTest</string>
+    <string name="total_weight_test">TotalWeightTest</string>
+    <string name="calories">Calories:</string>
+    <string name="totalweight">TotalWeight:</string>
 </resources>

@@ -1,20 +1,20 @@
-package network.resources.models.datasources
+package com.example.network.datasource
 
 import android.util.Log
-import network.Retrofit
-import network.api.ServiceAPI
-import network.resources.models.NutritionData
+import com.example.network.Retrofit
+import com.example.network.models.NutritionData
+import com.example.network.service.ServiceAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class NutritionRemoteDataSource(
-    private val serviceAPI: ServiceAPI = Retrofit().getNutritionInstance().create(ServiceAPI::class.java)
+class NutritionNetworkDatasource(
+    private val serviceAPI: ServiceAPI = Retrofit().getInstance().create(ServiceAPI::class.java)
 ) {
     fun getNutritionData(
         callback: DataReadyCallback
     ) {
-        val callNutritionData: Call<NutritionData> = serviceAPI.getNutritionDataSource()
+        val callNutritionData: Call<NutritionData> = serviceAPI.getNutrition()
         callNutritionData.enqueue(object : Callback<NutritionData> {
             override fun onResponse(call: Call<NutritionData>, response: Response<NutritionData>) {
                 response.body()?.run {

@@ -5,5 +5,5 @@
     <string name="total_weight_test">TotalWeightTest</string>
     <string name="calories">Calories:</string>
     <string name="total_weight">TotalWeight:</string>
-    <string name="calories_label">Calories:</string>
+    <string name="calories_header">Calories:</string>
 </resources>
